@@ -18,3 +18,4 @@ Feature: [UI] [Products]
         Then I click on "Save New Product button" on "Add New Product" page
         Then I should be on "Products List" page
         Then I should see "Notification" contains text "Product was successfully created" on "Products List" page
+# need to delete created product manually

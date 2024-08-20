@@ -70,20 +70,6 @@ Then(
   }
 );
 
-// Then(/^I click on "Products button" on "Home" page$/, async function () {
-//   await pages["Home"].openProducts();
-// });
-
-// Then(/^I open (Products|Customers|Orders) List page on "Home" page$/, async function (module: string) {
-//   if (module === "Products") {
-//     await pages["Home"].openProducts();
-//   } else if (module === "Customers") {
-//     await pages["Home"].openCustomers();
-//   } else if (module === "Orders") {
-//     await pages["Home"].openOrders();
-//   }
-// });
-
 When(/^I login as Admin$/, async function () {
   const credentials = {
     username: "aqacourse@gmail.com",
@@ -103,3 +89,16 @@ Then(
     await element.selectByVisibleText(manufacturer);
   }
 );
+// Then(/^I click on "Products button" on "Home" page$/, async function () {
+//   await pages["Home"].openProducts();
+// });
+
+// Then(/^I open (Products|Customers|Orders) List page on "Home" page$/, async function (module: string) {
+//   if (module === "Products") {
+//     await pages["Home"].openProducts();
+//   } else if (module === "Customers") {
+//     await pages["Home"].openCustomers();
+//   } else if (module === "Orders") {
+//     await pages["Home"].openOrders();
+//   }
+// });
